@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+
+
+
+@keyframes zoom {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/types-of-printing-business-1024x585.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: zoom 10s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.logo{
+    
+        text-decoration: none;
+        color: #f44366;
+        font-size: 20px;
+        font-family: sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44366;
+    display: block;
+    margin: auto;
+    transition: 0.5;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.callus-btn,
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: background 1s, border 1s;
+}
+
+.callus-btn:hover,
+.hero-btn:hover {
+    border: 1px solid #f44366;
+    background: #f44366;
+    animation: shake 0.5s;
+}
+
+
+.text-box {
+    width: 95%;
+    text-align: center; /* Center align text */
+    margin-top: 90px;
+}
+
+.text-box h1 {
+    font-size: 70px;
+    color: #f44366;
+    font-weight: bold; /* Make the text bold */
+}
+
+.text-box p {
+    font-size: 12px; 
+    color: white;
+}
+
+
+
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(221, 4, 4, 0.2);
+}
+
+
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* 
+.facilities {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p {
+    padding: 0;
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+} */
+
+.facilities {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    width: 100%; 
+    aspect-ratio: 1 / 1; 
+}
+
+.facilities-col img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.facilities-col p {
+    padding: 0;
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+/* Testimonials */
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p{
+    padding: 0;
+}
+
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+    
+}
+
+.testimonials-col .fa{
+    color: #f44366;
+}
+
+    /* call for action */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/istockphoto-1144287280-612x612\(1\).jpg);
+     background-position: center;
+     background-size: cover;
+     background-color: cover;
+     border-radius: 10px;
+     text-align: center;
+     padding: 100px 0;
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+    /* footer section */
+
+    .footer{
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .footer h4{
+        margin-bottom: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    .fa {
+        color: #f44366;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+    }
+
+    .fa-brands{
+        color: #f44366;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+    }
+
+    .fa-heart-o {
+        color: #f44366;
+    }
+
+        /* About Us Page */
+    
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/types-of-printing-business-1024x585.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+
+
+iframe{
+    width: 100%;
+}  
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-us div .fa{
+    font-size: 28px;
+    color: #f44366;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.send-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #f44366;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.send-btn:hover{
+    border: 1px solid #f44366;
+    background: #f44366;
+    transition: 1s;
+}
+
+
+
+@keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f44366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: jump 2s infinite;
+    display: none; 
+}
+
+.banner {
+    padding-block: 4rem;
+    overflow: hidden;
+    background-color: var(--primary-color);
+  }
+  
+  .banner__container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  
+    animation: scroll 45s linear infinite;
+  }
+  
+  .banner__container img {
+    height: 30px;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-50% - 4rem));
+    }
+  }
+
+
+
+  .burger-icon {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+  
+@media (max-width: 768px) {
+    .burger-icon {
+        display: flex; 
+        margin-left: 80%;
+    }
+    
+    
+    .header {
+        min-height: 60vh; 
+        background-size: cover;
+        animation: none; 
+    }
+
+    .text-box {
+        width: 95%;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+        display: none;
+    }
+
+    .text-box p {
+        font-size: 12px; 
+        display: none;
+    }
+
+    nav {
+        flex-direction: column; 
+        padding: 2% 3%;
+    }
+
+    .nav-links ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-links ul li {
+        display: block; 
+        padding: 10px 0;
+        display: none;
+    }
+
+    .course .row,
+    .facilities .row,
+    .testimonials .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-col,
+    .campus-col,
+    .testimonials-col,
+    .facilities-col {
+        flex-basis: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .callus-btn,
+    .hero-btn,
+    .send-btn {
+        padding: 10px 20px; 
+    }
+
+    .cta {
+        padding: 50px 20px; 
+    }
+
+    iframe {
+        height: 300px; 
+    }
+
+    .banner__container {
+        gap: 4rem; 
+    }
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+ 
